@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CineTime - Kampanyalar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e2f;
+      color: white;
+    }
+
+    header {
+      background-color: #12121c;
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a.active {
+      color: #f3c623;
+    }
+
+    .btn-giris {
+      background-color: #f3c623;
+      color: black;
+      padding: 8px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      gap: 15px;
+    }
+
+    select, input[type="text"] {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      width: 200px;
+    }
+
+    .kampanya {
+      display: flex;
+      background-color: #fff;
+      border-radius: 10px;
+      margin: 30px auto;
+      max-width: 1000px;
+      color: #000;
+      overflow: hidden;
+    }
+
+    .kampanya img {
+      width: 50%;
+      object-fit: cover;
+    }
+
+    .kampanya-info {
+      padding: 20px;
+      width: 50%;
+    }
+
+    .kampanya-info h3 {
+      margin-top: 0;
+      color: #12121c;
+    }
+
+    .kampanya-info p {
+      margin: 10px 0;
+    }
+
+    .kampanya-info .detay-btn {
+      border: 2px solid black;
+      background: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">CINETIME</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Vizyondakiler</a></li>
+      <li><a href="yakında.html">Yakında</a></li>
+      <li><a href="kampanyalar.html" class="active">Kampanyalar</a></li>
+      <li><a href="etkinlikler.html">Etkinlikler</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="subelerimiz.html">Şubelerimiz</a></li>
+      <li><a href="hakkinda.html">Hakkında</a></li>
+      <li><a href="tuketici.html">Tüketici Köşesi</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+  </nav>
+  <a href="#" class="btn-giris">Giriş Yap</a>
+</header>
+
+<main>
+  <h1>Kampanyalar</h1>
+
+  <div class="search-bar">
+    <select>
+      <option>Tüm Şehirler</option>
+    </select>
+    <input type="text" placeholder="Kampanyalarda Arayın">
+  </div>
+
+  <div class="kampanya">
+    <img src="images/turkcell.jpg" alt="GNÇ Kampanya">
+    <div class="kampanya-info">
+      <h3>GNÇ Kullanan Tüm Turkcell Kullanıcılarına Özel Sinema Ayrıcalıkları</h3>
+      <p>1 Sinema Bileti Alana 1 Sinema Bileti Hediye!</p>
+      <p><strong>Kampanya Başlangıç:</strong> 01 Şubat Cumartesi</p>
+      <p><strong>Kampanya Bitiş:</strong> 31 Aralık Çarşamba</p>
+      <button class="detay-btn">Kampanya Detayları</button>
+    </div>
+  </div>
+
+  <div class="kampanya">
+    <img src="images/mısır.jpg" alt="Mısır Kampanyası">
+    <div class="kampanya-info">
+      <h3>MAXI ve KOVA Mısır Kampanyası</h3>
+      <p>Kovanızı aynı gün getir, yarı fiyatına doldur!</p>
+      <p><strong>Kampanya Başlangıç:</strong> 01 Ocak Çarşamba</p>
+      <p><strong>Kampanya Bitiş:</strong> 31 Aralık Çarşamba</p>
+      <button class="detay-btn">Kampanya Detayları</button>
+    </div>
+  </div>
+
+</main>
+
+</body>
+</html>

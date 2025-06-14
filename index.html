@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineTime - Vizyondaki Filmler</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- AOS (Animasyon) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e2f;
+      color: white;
+    }
+
+    header {
+      background-color: #12121c;
+    }
+
+    .top-bar {
+      background-color: #000;
+      padding: 5px 30px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: white;
+      padding: 15px 30px;
+    }
+
+    nav {
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #12121c;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a.active {
+      color: #f3c623;
+    }
+
+    .giris {
+      background-color: #f3c623;
+      color: black;
+      padding: 8px 16px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    .swiper {
+      width: 90%;
+      margin: 0 auto 40px;
+    }
+
+    .swiper-slide {
+      background-color: #2e2e42;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .bilet {
+      background-color: #f3c623;
+      color: black;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .bilet-al {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .filters select {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      width: 180px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <span>Özdilek Holding Kuruluşları</span>
+      <span>Özdilek Akademi</span>
+    </div>
+
+    <div class="logo">CINETIME</div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Vizyondakiler</a></li>
+        <li><a href="yakinda.html">Yakında</a></li>
+        <li><a href="kampanyalar.html">Kampanyalar</a></li>
+        <li><a href="etkinlikler.html">Etkinlikler</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="subelerimiz.html">Şubelerimiz</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+        <li><a href="tuketici-kosesi.html">Tüketici Köşesi</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+      <button class="giris">Giriş Yap</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="baslik">Vizyondaki Filmler</h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/sihirli.jpg" alt="Sihirli Annem">
+          <h3>Sihirli Annem: Hepimiz Biriz</h3>
+          <p>85 dk. | Fantastik, Aile</p>
+          <button class="bilet">Bilet Al</button>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/mission.jpg" alt="Mission Impossible">
+          <h3>Mission: Impossible</h3>
+          <p>169 dk. | Aksiyon, Macera</p>
+          <button class="bilet">Bilet Al</button>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/hepyek.jpg" alt="Hep Yek Loto">
+          <h3>Hep Yek: Loto</h3>
+          <p>Komedi</p>
+          <button class="bilet">Bilet Al</button>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/kucuk.jpg" alt="Süper Köpekler">
+          <h3>Süper Köpekler Yaz Maceraları</h3>
+          <p>74 dk. | Animasyon</p>
+          <button class="bilet">Bilet Al</button>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="bilet-al">
+      <h2>Bilet Al</h2>
+      <div class="filters">
+        <select><option>Şehir Seçiniz</option></select>
+        <select><option>Sinema Seçiniz</option></select>
+        <select><option>Tarih Seçiniz</option></select>
+        <select><option>Film Seçiniz</option></select>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

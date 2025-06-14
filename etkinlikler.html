@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Etkinlikler - Cinetime</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Barlow', sans-serif;
+      background-color: #1f202c;
+      color: white;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      color: #ffc107;
+    }
+    .active {
+      color: #ffc107;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    .filters {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .filters select, .filters input {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: #2f3042;
+      color: white;
+      margin-bottom: 10px;
+    }
+    .filters input {
+      flex: 1;
+      margin-left: 20px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background-color: white;
+      color: black;
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+      flex: 1;
+    }
+    .card-content h3 {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+    .card-content p {
+      font-size: 15px;
+      color: #333;
+    }
+    .card-content a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: 1px solid #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #000;
+      transition: all 0.3s;
+    }
+    .card-content a:hover {
+      background-color: #ffc107;
+      color: #1f202c;
+      border-color: #ffc107;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div style="color: white; font-weight: bold; font-size: 20px;">CINETIME</div>
+  <nav>
+    <a href="index.html">Vizyondakiler</a>
+    <a href="yakında.html">Yakında</a>
+    <a href="kampanyalar.html">Kampanyalar</a>
+    <a href="etkinlikler.html" class="active">Etkinlikler</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="şubelerimiz.html">Şubelerimiz</a>
+    <a href="hakkında.html">Hakkında</a>
+    <a href="tüketici.html">Tüketici Köşesi</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>Etkinlikler</h1>
+
+  <div class="filters">
+    <select>
+      <option>Tüm Şehirler</option>
+      <option>İstanbul</option>
+      <option>Ankara</option>
+      <option>İzmir</option>
+    </select>
+    <input type="text" placeholder="Etkinliklerde Arayın">
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <img src="images/etkinlik1.jpg" alt="Etkinlik 1">
+      <div class="card-content">
+        <h3>Kardeş Takımı 2 Filminin Oyuncuları...</h3>
+        <p>Kardeş Takımı 2 filminin oyuncuları Ceyda Kasabalı, Fırat Albayram, Ecrin Su...</p>
+        <a href="#">Devamı</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/etkinlik2.jpg" alt="Etkinlik 2">
+      <div class="card-content">
+        <h3>Tur Rehberi Filminin Oyuncuları ve...</h3>
+        <p>Tur Rehberi filminin oyuncuları Cem Gelinoğlu, Eda Akalın, Engin Türkoğlu ve yönetmeni...</p>
+        <a href="#">Devamı</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/etkinlik3.jpg" alt="Etkinlik 3">
+      <div class="card-content">
+        <h3>0000 Kilometre Filminin Oyuncuları ve...</h3>
+        <p>0000 Kilometre filminin oyuncuları ve kitabının yazarı Beyza Alkoç, ÖzdilekPark...</p>
+        <a href="#">Devamı</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/etkinlik4.jpg" alt="Etkinlik 4">
+      <div class="card-content">
+        <h3>0000 Kilometre Filminin Oyuncuları ve...</h3>
+        <p>0000 Kilometre filminin oyuncuları ve kitabının yazarı Beyza Alkoç, ÖzdilekPark...</p>
+        <a href="#">Devamı</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

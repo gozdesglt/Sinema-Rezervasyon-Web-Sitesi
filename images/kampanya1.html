@@ -1,0 +1,777 @@
+
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+  
+
+  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-814001141"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-814001141'); </script>
+  	<!--Meta Tagları-->
+	
+	<meta charset="utf-8" />	
+	<base href="/tr/"/>
+    <title>Kampanyalar</title>
+    <meta name="description" content="Avantajlı Kampanyalarımızı kaçırmayın.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="author" content="Profornet">
+	<meta name="format-detection" content="telephone=no">
+	<link href="https://www.cinetime.com.tr//tr/kampanyalar" rel="canonical">
+    <!--CSS-->
+    <link href="css/profornet_standart.css" rel="stylesheet">
+    <link href="css/profornet_main.css" rel="stylesheet">
+    <link href="css/profornet_mobil.css" rel="stylesheet">
+    <link href="css/profornet_tablet.css" rel="stylesheet">
+    <link href="css/profornet_dark.css" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="/images/fav/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/fav/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/fav/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/fav/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/fav/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/fav/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/fav/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/fav/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/fav/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/images/fav/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/fav/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/fav/favicon-16x16.png">
+	<link rel="manifest" href="/images/fav/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/images/fav/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">	
+	
+	
+	<!--Open Graph-->
+	<meta property="og:site_name" content="Cinetime.com.tr">
+	<meta property="og:url" content="https://www.cinetime.com.tr/tr/kampanyalar">
+	<meta property="og:title" content="Kampanyalar">
+	<meta property="og:image" content="https://www.cinetime.com.tr/images/logo.svg">
+	<meta property="og:image:width" content="285" />
+	<meta property="og:image:height" content="380" />	
+	
+	<meta property="business:contact_data:street_address" content="">
+	<meta property="business:contact_data:locality" content="">
+	<meta property="business:contact_data:region" content="">
+	<meta property="business:contact_data:postal_code" content="">
+	<meta property="business:contact_data:country_name" content="">
+	<!--Twitter Card-->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="https://www.cinetime.com.tr">
+	<meta name="twitter:title" content="Kampanyalar">
+	<meta name="twitter:description" content="Avantajlı Kampanyalarımızı kaçırmayın.">
+	<meta name="twitter:image" content="https://www.cinetime.com.tr/images/logo.svg">
+	
+
+
+
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+	<!--JS-->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/profornet_standart.js"></script>
+    <script src="/js/profornet_main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/kuruluslar.js"></script>
+	<script src="js/underscore-min.js"></script>
+	<script src="js/jquery.inputmask.min.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	
+	<script>
+		function titleDesc(){
+			console.log(title,description,url,imageUrl)
+			document.getElementsByTagName("title")[0].innerText = title;
+			document.querySelector("meta[name='description']").setAttribute("content", description)
+			document.querySelector("meta[property='og:title']").setAttribute("content", title)
+			document.querySelector("meta[property='og:url']").setAttribute("content", "www.cinetime.com.tr" + url)
+			document.querySelector("meta[property='og:image']").setAttribute("content","www.cinetime.com.tr" + imageUrl)
+
+			document.querySelector("meta[name='twitter:title']").setAttribute("content", title)
+			document.querySelector("meta[name='twitter:description']").setAttribute("content", description)
+			document.querySelector("meta[name='twitter:image']").setAttribute("content", "www.cinetime.com.tr" + imageUrl)
+		}
+	</script>	
+<script>
+
+</script></head>
+
+  <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NF4X2D8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+  
+	<div class="mobilmenu">
+	<div class="mobilmenu-ust">
+		<button class="profornet-kapat mobilmenuKapat" aria-label="Menüyü Kapat"></button>
+		<ul class="mobilmenu--dil">
+			<li><a href="#" title=""></a></li>
+		</ul>
+	</div>
+	<nav class="mobilmenu--menu">
+		<ul>	
+			<li><a href="ozel-etkinlik-talebi" title="Özel Etkinlik Talebi">Özel Etkinlik Talepleri</a></li>
+			<li class="mobilmenu--menu-sosyal">
+				<a class="profornet-youtube" href="https://www.youtube.com/channel/UCCnIZk6VAtp1HQqdSq_15Qw" title="Cinetime Youtube Kanalı" target="_blank" rel="nofollow noreferrer"></a>
+				<a class="profornet-instagram" href="https://www.instagram.com/cinetimesinema/" title="Cinetime instagram" target="_blank" rel="nofollow noreferrer"></a>
+				<a class="profornet-twitter" href="https://twitter.com/cinetime_sinema" title="Cinetime twitter" target="_blank" rel="nofollow noreferrer"></a>
+				<a class="profornet-facebook" href="https://www.facebook.com/cinetimesinemalari" title="Cinetime Facebook" target="_blank" rel="nofollow noreferrer"></a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+<header data-header class="fixed-header">
+	<div class="header_ust">
+		<ul>
+			<li class="header_ust-iletisim">
+				<ul>
+					<li id="ozdilek-kuruluslari"><a href="#" title="">Özdilek Holding Kuruluşları</a></li>					
+				</ul>
+				<a href="http://www.ozdilekakademi.com.tr/" target="_blank" title="Özdilek Akademi">Özdilek Akademi</a>
+			</li>
+			<li class="header_ust-sosyal">
+				<a class="header_ust-etkinlik" href="ozel-etkinlik-talebi" title="Özel Etkinlik Talebi">Özel Etkinlik Talepleri</a>
+				<a class="profornet-youtube" href="https://www.youtube.com/channel/UCCnIZk6VAtp1HQqdSq_15Qw" title="Cinetime Youtube Kanalı" target="_blank" rel="nofollow noreferrer"></a>
+				<a class="profornet-instagram" href="https://www.instagram.com/cinetimesinema/" title="Cinetime instagram" target="_blank" rel="nofollow noreferrer"></a>
+				<a class="profornet-twitter" href="https://twitter.com/cinetime_sinema" title="Cinetime twitter" target="_blank" rel="nofollow noreferrer"></a>
+				<a class="profornet-facebook" href="https://www.facebook.com/cinetimesinemalari" title="Cinetime Facebook" target="_blank" rel="nofollow noreferrer"></a>
+			</li>
+		</ul>
+	</div>
+	<div class="header_alt">
+		<div>
+			<figure><button class="profornet-menu" aria-label="Menüyü Aç"></button><a href="/" title="Anasayfa"><img src="images/logo.svg" alt="cinetime.com.tr" class="logo" style="width:66%;height:auto"></a></figure>
+			<nav>
+				<ul data-menu>
+					<li><a href="vizyondakiler" title="Vizyondakiler">Vizyondakiler</a></li>
+					<li><a href="yakinda" title="Yakında">Yakında</a></li>
+					<li><a href="kampanyalar" title="Kampanyalar">Kampanyalar</a></li>
+					<li><a href="etkinlikler" title="Etkinlikler">Etkinlikler</a></li>
+					<li><a href="galeri" title="Galeri">Galeri</a></li>
+					<li><a href="subelerimiz" title="Şubelerimiz">Şubelerimiz</a></li>
+					<li><a href="sayfa/hakkinda" title="Hakkında">Hakkında</a></li>
+					<li><a href="tuketiciKosesi" title="Tüketici Köşesi">Tüketici Köşesi</a></li>
+					<li><a href="iletisim" title="İletişim">İletişim</a></li>
+					
+					<li class="giris-yap-btn-li">
+						<a href="javascript:void(0)" title="Giriş" class="giris-yap-btn">Giriş Yap</a>
+						<div class="giris-yap-main">
+							<div class="giris-yap-main-icerik">
+								<div id="tab1-hesap" class="tab_content-hesap">
+									<button onclick="girisUyeliksiz(this)">Üyeliksiz Satın Al</button><br/><br/>
+									<h2>Giriş Yap</h2>
+									<div class="giris-yap-input">
+										<input type="text" class="h_kAdi" autocomplete="off" placeholder="E-posta veya Telefon">
+										<input type="password" class="h_parola" autocomplete="off" placeholder="Şifreniz">
+									</div>
+									<button onclick="giris(this)" class="girisButonu">Giriş Yap</button>
+									<a href="#" title="Cinetime Şifremi Unuttum" class="giris-yap-sifre-unuttum">Şifremi Unuttum</a>
+									<p>Bir Hesabınız Yok mu? Ücretsiz Oluştur</p>
+									<a href="javascript:void(0)" title="Cinetime üye hesabı oluştur" class="hesap-olustur-btn">Hesap Oluştur</a>
+								</div>
+								<div id="tab2-hesap" class="tab2_content-hesap" style="display:none;">
+									<h2>Hesap Oluştur</h2>
+									<div class="giris-yap-input hesap-olustur-input">
+										<input type="text" class="h_adi" placeholder="Adınız">
+										<input type="text" class="h_soyadi" placeholder="Soyadınız">
+										<input type="text" class="h_tel" placeholder="Telefon No" data-inputmask="'mask': '599 999 99 99'">
+										<input type="text" class="h_posta" placeholder="E-posta">
+										<div style="width:49%"><select class="cmb_sehir_uye" class="dropdown"></select></div>										
+										<input type="text" class="txt_dogum" autocomplete="off" placeholder="Doğum Tarihiniz" data-inputmask="'mask': '99.99.9999'">
+										<input type="password" class="h_sifre" autocomplete="off" placeholder="Şifreniz">
+										<input type="password" class="h_sifre1" autocomplete="off" placeholder="Şifre Tekrar">
+									</div>
+									<label class="container-chech"><p>Cinetime ile ilgili kampanyalardan ve bilgilendirmelerden e-posta ve sms ile haberdar olmak istiyorum.</p>
+										<input class="h_bultenAbonelik" type="checkbox">
+										<span class="checkmark"></span>
+									</label>									
+									<label class="container-chech"><p>Kişisel verileriniz, <a href="#" title="Aydınlatma Metni" target="_blank">Aydınlatma Metni</a> kapsamında işlenmektedir. Fornmu Gönder butonuna basarak <a href="#" title="" target="_blank">Aydınlatma Metni</a>'ni <a href="#" title="" target="_blank">Çerez Politikası</a>’nı okuduğunuzu ve kabul ettiğinizi onaylıyorsunuz.</p>
+										<input class="h_aydinlatma" type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+									<button onclick="hesapOlustur(this)">Hesap Oluştur</button>
+									<i class="profornet-sol hesap-giris-geri"></i>
+								</div>	
+								<div id="tab3-hesap" class="tab3_content-hesap" style="display:none;padding:100px 0">
+									<h2>Şifremi Unuttum</h2>
+									<div class="giris-yap-input">
+										<input type="text" class="h_posta" placeholder="E Posta">
+									</div>
+									<button onclick="sifremiUnuttum(this)">Gönder</button>
+									<i class="profornet-sol hesap-giris-geri"></i>
+								</div>	
+							</div>
+						</div>
+					</li>
+					
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+<div class="giris-yap-main-mobil" style="display:none;">
+
+	<div class="giris-yap-main-icerik">
+		<div id="tab1-hesap" class="tab_content-hesap">
+			<button onclick="girisUyeliksiz(this)">Üyeliksiz Bilet al</button><br/><br/>
+			<h2>Giriş Yap</h2>
+			<div class="giris-yap-input">
+				<input type="text" class="h_kAdi" autocomplete="off" placeholder="Eposta Veya Telefon">
+				<input type="password" class="h_parola" autocomplete="off" placeholder="Şifreniz">
+			</div>
+			<button onclick="giris(this)" class="girisButonu">Giriş Yap</button>
+			
+			<a href="#" title="Şifremi Unuttum" class="giris-yap-sifre-unuttum">Şifremi Unuttum</a>
+			<p>Bir Hesabınız Yok Mu ? Ücretsiz Oluştur</p>
+			<a href="javascript:void(0)" title="" class="hesap-olustur-btn">Hesap Oluştur</a>
+			<i class="profornet-kapat hesap-giris-kapat"></i>
+		</div>
+		<div id="tab2-hesap" class="tab2_content-hesap" style="display:none;">
+			<h2>Hesap Oluştur</h2>
+			<div class="giris-yap-input hesap-olustur-input">
+				<input type="text" class="h_adi" placeholder="Adınız">
+				<input type="text" class="h_soyadi" placeholder="Soyadınız">
+				<input type="text" class="h_tel" placeholder="Telefon No"  data-inputmask="'mask': '599 999 99 99'">
+				<input type="text" class="h_posta" placeholder="E Posta">
+				<div class="uye_sehirSec"><select class="cmb_sehir_uye" class="dropdown"></select></div>										
+				<input type="text" class="txt_dogum" inputmode='none' autocomplete="off" placeholder="Doğum Tarihiniz">				
+				<input type="password" class="h_sifre" autocomplete="off" placeholder="Şifreniz">
+				<input type="password" class="h_sifre1" autocomplete="off" placeholder="Şifre Tekrar">
+			</div>
+			<label class="container-chech"><p>Cinetime ile ilgili kampanyalardan ve bilgilendirmelerden e-posta ve sms ile haberdar olmak istiyorum.</p>
+				<input class="h_bultenAbonelik" type="checkbox">
+				<span class="checkmark"></span>
+			</label>									
+			<label class="container-chech"><p>Kişisel verileriniz, <a href="#" title="Aydınlatma Metni" target="_blank">Aydınlatma Metni</a> kapsamında işlenmektedir. Fornmu Gönder butonuna basarak <a href="#" title="" target="_blank">Aydınlatma Metni</a>'ni <a href="#" title="" target="_blank">Çerez Politikası</a>’nı okuduğunuzu ve kabul ettiğinizi onaylıyorsunuz.</p>
+				<input class="h_aydinlatma" type="checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<button onclick="hesapOlustur(this)">Hesap Oluştur</button>
+			<i class="profornet-sol hesap-giris-geri"></i>
+			<i class="profornet-kapat hesap-giris-kapat"></i>
+		</div>	
+		<div id="tab3-hesap" class="tab3_content-hesap" style="display:none;padding:100px 0">
+			<h2>Şifremi Unuttum</h2>
+			<div class="giris-yap-input">
+				<input type="text" class="h_posta" placeholder="E Posta">
+			</div>
+			<button onclick="sifremiUnuttum(this)">Gönder</button>
+			<i class="profornet-sol hesap-giris-geri"></i>
+		</div>	
+	</div>
+	
+			
+</div>
+
+<script>
+	var sehirCombo=[{"id":1,"s":"Adana"},{"id":2,"s":"Adıyaman"},{"id":3,"s":"Afyon"},{"id":4,"s":"Ağrı"},{"id":68,"s":"Aksaray"},{"id":5,"s":"Amasya"},{"id":6,"s":"Ankara"},{"id":7,"s":"Antalya"},{"id":75,"s":"Ardahan"},{"id":8,"s":"Artvin"},{"id":9,"s":"Aydın"},{"id":10,"s":"Balıkesir"},{"id":74,"s":"Bartın"},{"id":72,"s":"Batman"},{"id":69,"s":"Bayburt"},{"id":11,"s":"Bilecik"},{"id":12,"s":"Bingöl"},{"id":13,"s":"Bitlis"},{"id":14,"s":"Bolu"},{"id":15,"s":"Burdur"},{"id":16,"s":"Bursa"},{"id":17,"s":"Çanakkale"},{"id":18,"s":"Çankırı"},{"id":19,"s":"Çorum"},{"id":20,"s":"Denizli"},{"id":21,"s":"Diyarbakır"},{"id":81,"s":"Düzce"},{"id":22,"s":"Edirne"},{"id":23,"s":"Elazığ"},{"id":24,"s":"Erzincan"},{"id":25,"s":"Erzurum"},{"id":26,"s":"Eskişehir"},{"id":27,"s":"Gaziantep"},{"id":28,"s":"Giresun"},{"id":29,"s":"Gümüşhane"},{"id":30,"s":"Hakkari"},{"id":31,"s":"Hatay"},{"id":76,"s":"Iğdır"},{"id":32,"s":"Isparta"},{"id":34,"s":"İstanbul"},{"id":35,"s":"İzmir"},{"id":46,"s":"K.maraş"},{"id":78,"s":"Karabük"},{"id":70,"s":"Karaman"},{"id":36,"s":"Kars"},{"id":37,"s":"Kastamonu"},{"id":38,"s":"Kayseri"},{"id":71,"s":"Kırıkkale"},{"id":39,"s":"Kırklareli"},{"id":40,"s":"Kırşehir"},{"id":79,"s":"Kilis"},{"id":41,"s":"Kocaeli"},{"id":42,"s":"Konya"},{"id":43,"s":"Kütahya"},{"id":44,"s":"Malatya"},{"id":45,"s":"Manisa"},{"id":47,"s":"Mardin"},{"id":33,"s":"Mersin"},{"id":48,"s":"Muğla"},{"id":49,"s":"Muş"},{"id":50,"s":"Nevşehir"},{"id":51,"s":"Niğde"},{"id":52,"s":"Ordu"},{"id":80,"s":"Osmaniye"},{"id":53,"s":"Rize"},{"id":54,"s":"Sakarya"},{"id":55,"s":"Samsun"},{"id":56,"s":"Siirt"},{"id":57,"s":"Sinop"},{"id":58,"s":"Sivas"},{"id":63,"s":"Şanlıurfa"},{"id":73,"s":"Şırnak"},{"id":59,"s":"Tekirdağ"},{"id":60,"s":"Tokat"},{"id":61,"s":"Trabzon"},{"id":62,"s":"Tunceli"},{"id":64,"s":"Uşak"},{"id":65,"s":"Van"},{"id":77,"s":"Yalova"},{"id":66,"s":"Yozgat"},{"id":67,"s":"Zonguldak"}]
+	function sehirCombosuYukle(secici,ilkOge){
+		if($(secici).length<1) return
+		
+		$("option",secici).remove()
+		$("<option/>").attr("value" ,ilkOge.id).text(ilkOge.s).appendTo(secici)
+		_.each(sehirCombo,function(oge){
+			$("<option/>").attr("value" ,oge.id).text(oge.s).appendTo(secici)
+		})
+	}
+	
+	$(function(){
+		$(":input").inputmask();
+	
+		
+			if(localStorage.getItem("access_token")){
+				$.ajax({
+					url: "/service/loginKontrol/",
+					dataType: "json",
+					beforeSend: function(request) {
+						request.setRequestHeader("Authorization", "Basic " + localStorage.getItem("access_token"));
+					},
+					success: function(data) {
+						if(data.status==1) location.reload();
+					}
+				});				
+			}
+		
+
+		sehirCombosuYukle(".cmb_sehir_uye",{id:0,s:"Şehir Seçiniz"})
+		sehirCombosuYukle("select[name='cmb_sehir']",{id:0,s:"Seçiniz"})
+		
+		/*---*/
+		$(".h_kAdi, .h_parola").on('keyup', function (e) {
+			if (e.key === 'Enter' || e.keyCode === 13) $(this).closest(".tab_content-hesap").find(".girisButonu").click()
+		});
+		
+		acikSayfa=document.location.pathname.replace($("base").attr("href"),"")
+		$("a[href='" + acikSayfa + "']").addClass("sayfa-secili")
+		/*---*/
+
+		if($( window ).width()<1200){
+			$( ".giris-yap-btn" ).click(function() {
+				$(".mobilmenu").removeClass("menu-position");
+				$("body").css("overflow","visible");
+				$(".giris-yap-main-mobil").css("display","block");
+				$(window).scrollTop(0);
+			});
+			
+			$(".hesap-giris-kapat").click(function () {
+				$(".giris-yap-main-mobil").fadeOut();
+			});
+		}
+		
+		var girisMenuTimer=0
+		$( ".giris-yap-btn-li" ).hover(
+		  function() {
+			if(girisMenuTimer!=0) 
+				clearTimeout(girisMenuTimer)
+			else
+				$(".giris-yap-main").fadeIn();
+		  }, 
+		  function() {
+			/*
+			
+				$(".giris-yap-main").fadeOut();
+			
+			*/
+		  }
+		);
+
+	
+
+
+
+		$(".tab_content").hide();
+		$(".tab_content:first").show();
+		$("ul.tabs li").click(function() {
+			$(".tab_content").hide();
+			var activeTab = $(this).attr("rel"); 
+			$("#"+activeTab).fadeIn();		
+			$("ul.tabs li").removeClass("active");
+			$(this).addClass("active");
+		});	
+
+
+		$(".hesap-giris-geri").click(function (){
+			$(".tab2_content-hesap").hide();
+			$(".tab3_content-hesap").hide();
+
+			$(".tab_content-hesap").fadeIn();
+			return false
+		});			
+
+		$(".hesap-olustur-btn").click(function (){
+			$(".tab_content-hesap").hide();
+			$(".tab2_content-hesap").fadeIn();
+
+			$(".cmb_sehir_uye").selectmenu({
+				width:"100%",
+				classes: {"ui-selectmenu-button":"ic_select-button"},
+			})
+
+			$.datepicker.regional["tr"]
+						
+			$( ".txt_dogum" ).datepicker({
+				dateFormat: "dd.mm.yy",
+				minDate: "-100y",
+				maxDate: new Date(),
+				showMonthAfterYear :true,
+				yearRange: "-100:+1",
+				changeMonth: true,
+				changeYear: true,
+				beforeShow: function() {
+					setTimeout(function(){
+						$('.ui-datepicker').css('z-index', 300);
+					}, 0);
+				}				
+			})			
+						
+			return false
+		});
+		
+		$(".giris-yap-sifre-unuttum").click(function (){
+			$(".tab_content-hesap").hide();
+
+			$(".tab3_content-hesap").fadeIn();
+			return false
+		});
+		
+	})
+	
+	
+	
+	
+	
+	function girisUyeliksiz(obje){
+		var ust=$(obje).closest("div")
+		$(".h_kAdi",ust).val("")
+		$(".h_parola",ust).val("")
+
+		giris(obje)
+	}
+
+	function giris(obje){
+		var ust=$(obje).closest("div")
+		
+		$.post("/service/giris/",{"kAdi":$(".h_kAdi",ust).val(),"parola":$(".h_parola",ust).val()},function(data){
+			if(data.status==0){
+				alert(data.hata)
+			}else{
+				localStorage.setItem("access_token",data.access_token)
+				localStorage.setItem("refresh_token",data.refresh_token)
+				location.reload();
+			}
+		},"json")			
+	}
+
+	function sifremiUnuttum(obje){
+		var ust=$(obje).closest("div")
+	
+		$.getJSON("/service/sifremiUnuttum/",{"mail":$(".h_posta",ust).val()},function(data){
+			if(data.status==0){
+				alert(data.hata)
+			}else{
+				alert(data.mesaj)
+				$(".giris-yap-main").fadeOut();
+			}
+		},"json")			
+	}		
+	
+	function hesapOlustur(obje){
+		var ust=$(obje).closest("div")
+
+		if($(".h_aydinlatma",ust).prop("checked")!=true) {
+			alert("Aydınlatma metnini okuyup onayladığınıza dair onay kutusunu işaretlemelisiniz.")
+			return false
+		}
+
+		if($(".h_sifre",ust).val()!=$(".h_sifre1",ust).val()) {
+			alert("Şifre tekrarınız hatalı.")
+			return false
+		}
+		
+		giden={
+			"adi":$(".h_adi",ust).val(),
+			"soyadi":$(".h_soyadi",ust).val(),
+			"telefon":$(".h_tel",ust).val(),
+			"posta":$(".h_posta",ust).val(),
+			"sehir":$(".cmb_sehir_uye",ust).val(),
+			"dogum":$(".txt_dogum",ust).val(),
+			"sifre":$(".h_sifre",ust).val(),	
+			"ozdilekinfo":($(".h_bultenAbonelik",ust).prop("checked") ? 1 : 0)
+		}
+		
+		$.post("/service/kullaniciEkle/",giden,function(data){
+			if(data.status==0){ 
+				alert(data.hata) 
+			}else if(data.status==1){
+				alert("Üyelik işleminiz tamamlandı. Vakit ayırdığınız için teşekkür ederiz.")
+				$(".hesap-giris-geri").click()
+			} else{
+				alert("Beklenmeyen bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.")
+			}			
+		},"json")
+	}	
+</script>
+
+	<main>
+<script>
+$(function(){
+	$("#kategoriSec").selectmenu({width: 200,"select":sec})
+	
+	$("#arama").keyup(function(){
+		$(".sayfa_box li[data-kategori]").show()
+		$(".sayfa_box").show()
+		
+		if($("#arama").val().length==0) return
+		
+		$(".sayfa_box li[data-kategori]").each(function(){
+			if($("h2",this).html().toLocaleLowerCase("tr-TR").indexOf($("#arama").val().toLocaleLowerCase("tr-TR"))<0) $(this).hide() 
+		})
+
+		if($(".sayfa_box li[data-kategori]:visible").length==0){
+			$(".aramaYok").show()
+			$(".sayfa_box").hide()
+		}else{
+			$(".aramaYok").hide()
+			$(".sayfa_box").show()
+		}			
+
+		
+	})	
+})
+
+function sec(){
+	var kriter=""
+	$(".sayfa_box li[data-kategori]").each(function(){
+		goster=true
+		if(goster && $("#kategoriSec").val()!=0 && ($(this).data("kategori").find(oge => oge==$("#kategoriSec").val())==undefined)) goster=false
+		if(goster){ $(this).show() }else{ $(this).hide() }
+	})
+}		
+</script>
+<section class="sayfa_film-ara alt-iptal">
+	<div class="px1200">
+		<div class="film-ara-ust">
+			<h2 class="sayfa-baslik">Kampanyalar</h2>
+			<ul>
+				<li>
+					<select id="kategoriSec" onchange="sec()">
+						<option value="0">Tüm Şehirler</option>
+						
+					</select>
+				</li>
+			</ul>
+			<div><input type="text" id="arama" placeholder="Kampanyalarda Arayın"><button><i class="profornet-arama"></i></button></div>
+		</div>
+	</div>
+</section>
+<section class="kampanyalar">
+	<div class="px1200">
+		<div class="aramaYok">Ne yazık ki arama kriterine uygun kampanyamız bulunmuyor.</div>
+		<ul class="sayfa_box">
+			
+			<li data-kategori='[""]'>
+				<div class="sayfa_box-img" style="background: url(/images/kampanyalar/34/kucuk.jpg);"></div>
+				<div class="sayfa_box-icerik">
+					<h2>GNÇ Kullanan Tüm Turkcell Kullanıcılarına Özel Sinema Ayrıcalıkları</h2>
+					<p>1 Sinema Bileti Alana 1 Sinema Bileti Hediye! </p>
+					<div>
+						<ul>
+							
+							<li>
+								<span>Kampanya Başlangıç</span>
+								<span>01 Şubat Cumartesi</span>
+							</li>
+							
+							<li>
+								<span>Kampanya Btiş </span>
+								<span>31 Aralık Çarşamba</span>
+							</li>
+							
+						</ul>
+						<a href="kampanyalar/gnc-kullanan-tum-turkcell-kullanicilarina-ozel-sinema-ayricaliklari" title="Kampanya Detay" class="sayfa_box-icerik-btn">Kampanya Detayları</a>
+					</div>
+				</div>
+			</li>
+			
+			<li data-kategori='[""]'>
+				<div class="sayfa_box-img" style="background: url(/images/kampanyalar/24/kucuk.jpg);"></div>
+				<div class="sayfa_box-icerik">
+					<h2>MAXİ ve KOVA Mısır Kampanyası</h2>
+					<p>MAXI ve KOVA Boy mısır kutunuzu aynı gün içerisinde yarı fiyatına yeniden doldurma fırsatı.</p>
+					<div>
+						<ul>
+							
+							<li>
+								<span>Kampanya Başlangıç</span>
+								<span>01 Ocak Çarşamba</span>
+							</li>
+							
+							<li>
+								<span>Kampanya Btiş </span>
+								<span>31 Aralık Çarşamba</span>
+							</li>
+							
+						</ul>
+						<a href="kampanyalar/maxi-ve-kova-misir-kampanyasi" title="Kampanya Detay" class="sayfa_box-icerik-btn">Kampanya Detayları</a>
+					</div>
+				</div>
+			</li>
+			
+			<li data-kategori='[""]'>
+				<div class="sayfa_box-img" style="background: url(/images/kampanyalar/30/kucuk.jpg);"></div>
+				<div class="sayfa_box-icerik">
+					<h2>Tüm Filmlerde Geçerli İndirimli Bilet Fırsatı Sizi Bekliyor.</h2>
+					<p>Pazartesi ve çarşamba günleri tüm filmlerin biletleri, seans ayrımı olmaksızın indirimli fiyattan satılmaktadır.</p>
+					<div>
+						<ul>
+							
+						</ul>
+						<a href="kampanyalar/tum-filmlerde-gecerli-indirimli-bilet-firsati-sizi-bekliyor_1" title="Kampanya Detay" class="sayfa_box-icerik-btn">Kampanya Detayları</a>
+					</div>
+				</div>
+			</li>
+			
+		</ul>
+	</div>
+</section>
+
+	</main>
+
+	   <footer>
+		
+		<div class="footer_orta">
+			<div class="px1200">
+				<ul class="footer_hizli-link">
+					<li><a href="/" title="Ana Sayfa">Ana Sayfa</a></li>					
+					<li><a href="vizyondakiler" title="Vizyondakiler">Vizyondakiler</a></li>
+					<li><a href="yakinda" title="Yakında">Yakında</a></li>
+					<li><a href="kampanyalar" title="Kampanyalar">Kampanyalar</a></li>
+					<li><a href="etkinlikler" title="Etkinlikler">Etkinlikler</a></li>
+					<li><a href="galeri" title="Galeri">Galeri</a></li>
+					<li><a href="subelerimiz" title="Şubelerimiz">Şubelerimiz</a></li>
+					<li><a href="sayfa/hakkinda" title="Hakkında">Hakkında</a></li>
+					<li><a href="tuketiciKosesi" title="Tüketici Köşesi">Tüketici Köşesi</a></li>
+					<li><a href="iletisim" title="İletişim">İletişim</a></li>
+					
+					<li><a href="/tr/ozel-etkinlik-talebi" title="Özel Etkinlik Talebi">Özel Etkinlik Talebi</a></li>
+				</ul>
+				<div class="footer_orta-sosyal-medya">
+					<ul class="footer_sosyal-medya">
+						<li><a class="profornet-youtube" href="https://www.youtube.com/channel/UCCnIZk6VAtp1HQqdSq_15Qw" title="Cinetime Youtube Kanalı" target="_blank" rel="nofollow noreferrer"></a></li>
+						<li><a class="profornet-instagram" href="https://www.instagram.com/cinetimesinema/" title="Cinetime instagram" target="_blank" rel="nofollow noreferrer"></a></li>
+						<li><a class="profornet-twitter" href="https://twitter.com/cinetime_sinema" title="Cinetime twitter" target="_blank" rel="nofollow noreferrer"></a></li>
+						<li><a class="profornet-facebook" href="https://www.facebook.com/cinetimesinemalari" title="Cinetime Facebook" target="_blank" rel="nofollow noreferrer"></a></li>
+					</ul>
+					
+					<ul class="footer_market">
+						<li>
+							<img src="../images/happ.png">
+							<h2>Huawei AppGallery </h2>
+							<a href="https://appgallery.huawei.com/app/C107594725" title="Cinetime Huawei AppGallery Uygulaması"></a>
+						</li>
+					</ul>
+					<ul class="footer_market">
+						
+						<li>
+							<ion-icon name="logo-apple"></ion-icon>
+							<h2>App Store</h2>
+							<a href="https://apps.apple.com/tr/app/cinetime/id1168622436?l=tr" title="Cinetime iPhone Uygulaması"></a>
+						</li>
+						<li>
+							<ion-icon name="logo-google-playstore"></ion-icon>
+							<h2>Google Play</h2>
+							<a href="https://play.google.com/store/apps/details?id=com.webcita.cinetime" title="Cinetime Android Uygulaması"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer_alt">
+			<div class="px1200">
+				<figure><a href="https://www.ozdilekholding.com.tr" target="_blank"><img src="images/ozdilekHolding.svg" style="width:80px;height:auto" alt="alt"></a></figure>
+				<ul>
+					<li><a target="_blank" href="https://www.ozdilek.com.tr/tr/kurumsal/gizlilik-ve-kisisel-verilerin-korunmasi-politikamiz" title="Gizlilik ve Kişisel Verilerin Korunması Politikamız">Gizlilik ve Kişisel Verilerin Korunması Politikamız</a></li>
+					<li><a href="sayfa/kullanim-ve-kosullar" title="Kullanım ve Koşullar">Kullanım ve Koşullar</a></li>
+				</ul>
+				<p>© 2023 Cinetime, All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+<script language="KVKKCookie_performans">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38113885-15', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script language="KVKKCookie_performans" async src="https://www.googletagmanager.com/gtag/js?id=UA-21824943-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21824943-1');
+</script>
+
+
+	<!-- Schema Başlangıç-->
+
+	<script type="application/ld+json">
+	{
+	 "@context":"http://schema.org",
+	 "@type":"Organization",
+	 "url":"http://siteadresi.com",
+		   "sameAs":[
+			 "http://www.facebook.com/profil",
+			 "http://instagram.com/profil",
+			 "http://www.linkedin.com/profil",
+			 "http://youtube.com/profil",
+			 "http://twitter.com/profil"
+		   ],
+	 "name":"şirket adı",
+	 "contactPoint":[
+	{ "@type":"ContactPoint",
+	 "telephone":"+90-000-000",
+	 "contactType":"sales"
+	}
+	 ],
+		   "address":{
+			 "@type":"PostalAddress",
+			 "addressLocality":"il ilçe",
+			 "streetAddress":"adres sokak vs"
+		   },
+		   "logo":"http://siteadresi.com/logo.png",
+		   "description":"site açıklaması",
+		   "email":"mailto:mailadresi.com"
+		   }
+	</script>
+	<script>
+		AOS.init();
+	</script>
+	<script>
+		if($( window ).width()<1200){
+			$(".hesap-sekmeler-box").css("display", "none");
+			$(".hesap-menu-mobil").click(function () {
+				$(".hesap-sekmeler-box").fadeToggle( "slow", "linear" );
+				$(".hesap-menu-mobil").toggleClass("rt180");
+			});
+		}
+	</script>
+
+	<!-- Schema Bitiş-->	
+	<script id="KVKKCookieJS" src="/proOrtak/KVKKCookie/KVKKCookie.js"></script>
+<script id="logoDownloadJS" src="/proOrtak/logoDownload.js" data-click=".logo" data-hash="Cinetime"></script>
+	
+
+	<!-- Google Tag Manager -->
+	<script language="KVKKCookie_performans">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NF4X2D8');</script>
+	
+	
+	<!-- End Google Tag Manager -->
+	<script src="//sl.setrowid.com/index.js.php?mkodu=2238"></script>	
+
+<script>
+/*
+fn=function(){
+		console.log("xxx",localStorage.getItem("adres"),document.location.href)
+	}
+window.setInterval(fn,500)
+
+window.addEventListener('beforeunload', (event) => {
+	localStorage.setItem("adres", document.location.href);
+});
+*/
+/*
+window.addEventListener('resize', (event) => {
+	consol.log("resize",document.location.href)
+});
+*/
+
+</script>
+
+</body>
+   
+</html>
+<!--- Oluşturma Süresi: 0,10938 --->
